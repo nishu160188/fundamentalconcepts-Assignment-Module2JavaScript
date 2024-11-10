@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
+    background-image: url(image/3529890.jpg);
+    background-position: 1%;
+    
+}
+
+.container, .container2 {
+    background-color: lightgray;
+    padding: 25px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+.container2 {
+    display: none;
+}
+
+p {
+    margin-bottom: 3px;
+}
+hr{
+    border-top: 2px dashed whitesmoke;
+}
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#add-name, #add-item {
+    width: 40%;
+    margin-left: 60%;
+    align-items: end;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+}
+
+li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+li button:hover {
+    background-color: #e53935;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .container, .container2 {
+        max-width: 90%;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}

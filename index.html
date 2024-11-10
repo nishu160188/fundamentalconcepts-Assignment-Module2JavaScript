@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create To Do</h1>
+        <hr>
+        <div class="form-container">
+            <p>Add list title</p>
+            <input type="text" id="list-title" placeholder="Enter List Title" />
+            <button id="add-name">Add List</button>
+            <p>Add item to list</p>
+            <input type="text" id="item-input" placeholder="Enter a task/item" disabled />
+            <button id="add-item" disabled>Add Item</button>
+        </div>
+    </div>
+    <div class="container2" id="container2">
+        <div class="todo-list">
+            <h2 id="current-list-title"></h2>
+            <hr>
+            <ul id="list-items"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
